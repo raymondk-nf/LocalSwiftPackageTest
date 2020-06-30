@@ -22,6 +22,7 @@
 		1D7A035B249F0CE800619362 /* SwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7A032E249E06EF00619362 /* SwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D7A038A249F0FA900619362 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A0389249F0FA900619362 /* Logger.swift */; };
 		1D7A038F249F0FDF00619362 /* Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A038E249F0FDF00619362 /* Addition.m */; };
+		1D96AD6224ABEC30006CAFF9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D96AD6124ABEC30006CAFF9 /* Lottie */; };
 		1DA0885B24ABE5B10067C784 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA0885A24ABE5B10067C784 /* ApolloCodegenLib */; };
 		1DA0885D24ABE5B10067C784 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA0885C24ABE5B10067C784 /* ApolloSQLite */; };
 		1DA0885F24ABE5B10067C784 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA0885E24ABE5B10067C784 /* ApolloWebSocket */; };
@@ -125,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA0886124ABE5B10067C784 /* Apollo in Frameworks */,
+				1D96AD6224ABEC30006CAFF9 /* Lottie in Frameworks */,
 				1DA30F23249F1AA5006C0967 /* Performance in Frameworks */,
 				1DA0886324ABE5B10067C784 /* ApolloCore in Frameworks */,
 				1DA0885F24ABE5B10067C784 /* ApolloWebSocket in Frameworks */,
@@ -306,6 +308,7 @@
 				1DA0885E24ABE5B10067C784 /* ApolloWebSocket */,
 				1DA0886024ABE5B10067C784 /* Apollo */,
 				1DA0886224ABE5B10067C784 /* ApolloCore */,
+				1D96AD6124ABEC30006CAFF9 /* Lottie */,
 			);
 			productName = SwiftFramework;
 			productReference = 1D7A032E249E06EF00619362 /* SwiftFramework.framework */;
@@ -369,6 +372,7 @@
 			mainGroup = 1D7A0121249E04BF00619362;
 			packageReferences = (
 				1DA0885924ABE5B10067C784 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				1D96AD6024ABEC2F006CAFF9 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 1D7A012B249E04C000619362 /* Products */;
 			projectDirPath = "";
@@ -848,6 +852,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1D96AD6024ABEC2F006CAFF9 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/madjemian/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
 		1DA0885924ABE5B10067C784 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -859,6 +871,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1D96AD6124ABEC30006CAFF9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D96AD6024ABEC2F006CAFF9 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		1DA0885A24ABE5B10067C784 /* ApolloCodegenLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1DA0885924ABE5B10067C784 /* XCRemoteSwiftPackageReference "apollo-ios" */;
